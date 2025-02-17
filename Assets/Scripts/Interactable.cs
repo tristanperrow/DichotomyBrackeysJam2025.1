@@ -4,7 +4,9 @@ using UnityEngine.Events;
 public abstract class Interactable : MonoBehaviour
 {
     [Header("Interactable Settings")]
-    public string interactionPrompt = "Interact [E]";
+    public string interactionPrompt = "Interact";
+    public Vector2 interactionPosition = Vector2.zero;
+
     public UnityEvent OnInteracted;
 
     public virtual void Interact()
@@ -14,11 +16,11 @@ public abstract class Interactable : MonoBehaviour
 
     public virtual void ShowPrompt()
     {
-        // Show tooltip
+        // show tooltip here?
     }
 
     public virtual void HidePrompt()
     {
-        // Hide tooltip
+        // hide tooltip here?
     }
 }

@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         FindClosestInteractableObject();
+
+        if (_interactableObject != null)
+            UpdateTooltip();
     }
 
     #region - Public Events -
@@ -84,9 +87,14 @@ public class PlayerController : MonoBehaviour
     private void SelectObject(GameObject gameObj)
     {
         var renderer = gameObj.GetComponent<SpriteRenderer>();
-        if (renderer != null)
+        Interactable interactable = gameObj.GetComponent<Interactable>();
+        if (renderer != null && interactable != null)
         {
             renderer.color = Color.cyan;
+
+            // shows the interactable's tooltip
+            Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
+            UIManager.Instance.ShowTooltip(interactable.interactionPrompt, gameObj.transform.position + ip);
         }
     }
 
@@ -97,6 +105,8 @@ public class PlayerController : MonoBehaviour
         if (renderer != null)
         {
             renderer.color = Color.white;
+            // hides the interactable's tooltip
+            UIManager.Instance.HideTooltip();
         }
     }
 
@@ -108,6 +118,17 @@ public class PlayerController : MonoBehaviour
         if (interactable)
         {
             interactable.Interact();
+        }
+    }
+
+    private void UpdateTooltip()
+    {
+        Interactable interactable = _interactableObject.GetComponent<Interactable>();
+        if (interactable != null)
+        {
+            // shows the interactable's tooltip
+            Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
+            UIManager.Instance.ShowTooltip(interactable.interactionPrompt, _interactableObject.transform.position + ip);
         }
     }
 

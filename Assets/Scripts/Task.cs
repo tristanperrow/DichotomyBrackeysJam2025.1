@@ -18,6 +18,7 @@ public abstract class Task : Interactable
     {
         // set the prompt from interactable
         interactionPrompt = data.taskInteractionPrompt;
+        interactionPosition = data.taskInteractionPromptPosition;
         // modify task settings
         timeRemaining = data.timeUntilFail;
         isActive = true;
@@ -59,9 +60,10 @@ public abstract class Task : Interactable
 public class TaskData : ScriptableObject
 {
     public string taskName = "Default Task";
-    [TextArea(1, 5)]
+    [TextArea(5, 10)]
     public string taskDescription = "";
     public string taskInteractionPrompt = "Interact";
+    public Vector2 taskInteractionPromptPosition = Vector2.zero;
 
     [Range(5f, 60f)]
     public float timeUntilFail = 20; // in seconds

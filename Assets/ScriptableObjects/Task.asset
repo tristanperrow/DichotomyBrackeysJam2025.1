@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskData
   taskName: Testing Task
   taskDescription: This is just a task for testing purposes. Not much to see here.
-  taskInteractionPrompt: 'Interact [E]'
+  taskInteractionPrompt: Interact
+  taskInteractionPromptPosition: {x: -1.1, y: 2}
   timeUntilFail: 20
