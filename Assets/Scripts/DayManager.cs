@@ -47,7 +47,7 @@ public class DayManager : MonoBehaviour
         }
         else
         {
-            Debug.Log(GetDayTimeString());
+            //Debug.Log(GetDayTimeString());
         }
     }
 

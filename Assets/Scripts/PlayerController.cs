@@ -7,15 +7,16 @@ using UnityEngine.InputSystem.Controls;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-
-    private Rigidbody2D rb;
+    [Header("Player State")]
+    public bool canMove = true;
 
     [Header("Options")]
     [Range(1, 20)][SerializeField] private float _moveSpeed = 5f;
     [Range(2, 20)][SerializeField] private float _interactRadius = 2f;
     [SerializeField] private LayerMask _interactLayer;
 
-    // properties
+    // private properties
+    private Rigidbody2D rb;
     private GameObject _interactableObject;
 
     private void Awake()
@@ -26,6 +27,9 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         FindClosestInteractableObject();
+
+        if (_interactableObject != null)
+            UpdateTooltip();
     }
 
     #region - Public Events -
@@ -83,9 +87,14 @@ public class PlayerController : MonoBehaviour
     private void SelectObject(GameObject gameObj)
     {
         var renderer = gameObj.GetComponent<SpriteRenderer>();
-        if (renderer != null)
+        Interactable interactable = gameObj.GetComponent<Interactable>();
+        if (renderer != null && interactable != null)
         {
             renderer.color = Color.cyan;
+
+            // shows the interactable's tooltip
+            Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
+            UIManager.Instance.ShowTooltip(interactable.interactionPrompt, gameObj.transform.position + ip);
         }
     }
 
@@ -96,6 +105,8 @@ public class PlayerController : MonoBehaviour
         if (renderer != null)
         {
             renderer.color = Color.white;
+            // hides the interactable's tooltip
+            UIManager.Instance.HideTooltip();
         }
     }
 
@@ -103,7 +114,22 @@ public class PlayerController : MonoBehaviour
     private void InteractWithObject(GameObject gameObj)
     {
         if (gameObj == null) return;
-        Debug.Log("Interacted with: " + gameObj.name);
+        Interactable interactable = gameObj.GetComponent<Interactable>();
+        if (interactable)
+        {
+            interactable.Interact();
+        }
+    }
+
+    private void UpdateTooltip()
+    {
+        Interactable interactable = _interactableObject.GetComponent<Interactable>();
+        if (interactable != null)
+        {
+            // shows the interactable's tooltip
+            Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
+            UIManager.Instance.ShowTooltip(interactable.interactionPrompt, _interactableObject.transform.position + ip);
+        }
     }
 
     #endregion
