@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Game.uss?fileID=7433441132597879392&amp;guid=0a73aae68c7a34445bd61da4b8b80b2d&amp;type=3#Game" />
+    <ui:VisualElement name="tooltip-container" style="flex-grow: 1;">
+        <ui:Label text="Label" name="tooltip-label" />
+    </ui:VisualElement>
+</ui:UXML>

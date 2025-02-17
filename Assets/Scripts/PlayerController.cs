@@ -7,15 +7,16 @@ using UnityEngine.InputSystem.Controls;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-
-    private Rigidbody2D rb;
+    [Header("Player State")]
+    public bool canMove = true;
 
     [Header("Options")]
     [Range(1, 20)][SerializeField] private float _moveSpeed = 5f;
     [Range(2, 20)][SerializeField] private float _interactRadius = 2f;
     [SerializeField] private LayerMask _interactLayer;
 
-    // properties
+    // private properties
+    private Rigidbody2D rb;
     private GameObject _interactableObject;
 
     private void Awake()
@@ -103,7 +104,11 @@ public class PlayerController : MonoBehaviour
     private void InteractWithObject(GameObject gameObj)
     {
         if (gameObj == null) return;
-        Debug.Log("Interacted with: " + gameObj.name);
+        Interactable interactable = gameObj.GetComponent<Interactable>();
+        if (interactable)
+        {
+            interactable.Interact();
+        }
     }
 
     #endregion
