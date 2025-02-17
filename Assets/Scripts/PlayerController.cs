@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Options")]
     [Range(1, 20)][SerializeField] private float _moveSpeed = 5f;
-    [SerializeField] private float _interactRadius = 2f;
+    [Range(2, 20)][SerializeField] private float _interactRadius = 2f;
     [SerializeField] private LayerMask _interactLayer;
 
     // properties
