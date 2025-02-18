@@ -41,8 +41,8 @@ public class CameraFollow : MonoBehaviour
     {
         Vector3 target = GetCameraBounds();
 
-        //transform.position = Vector3.SmoothDamp(transform.position, target, ref vel, cameraDragTime);
-        transform.position = target;
+        transform.position = Vector3.SmoothDamp(transform.position, target, ref vel, cameraDragTime);
+        //transform.position = target;
     }
 
     // clamps camera to bounds given

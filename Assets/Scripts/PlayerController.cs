@@ -15,13 +15,25 @@ public class PlayerController : MonoBehaviour
     [Range(2, 20)][SerializeField] private float _interactRadius = 2f;
     [SerializeField] private LayerMask _interactLayer;
 
+    [SerializeField] private Material _normMaterial;
+    [SerializeField] private Material _highlightMaterial;
+
+    [Header("Player Headbob")]
+    [SerializeField] private float _minHeadbobMagnitude = 3f;
+    [Range(0.025f, 0.2f)][SerializeField] private float _headbobScale = 0.05f;
+    [Range(1f, 20f)]    [SerializeField] private float _headbobRate = 10f;
+    [SerializeField] private GameObject _playerHead;
+
     // private properties
     private Rigidbody2D rb;
     private GameObject _interactableObject;
+    private Vector3 _playerHeadOrigin;
+    private bool _isFacingRight = false;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        _playerHeadOrigin = _playerHead.transform.localPosition;
     }
 
     private void Update()
@@ -30,13 +42,34 @@ public class PlayerController : MonoBehaviour
 
         if (_interactableObject != null)
             UpdateTooltip();
+
+        if (rb.linearVelocity.sqrMagnitude > _minHeadbobMagnitude)
+        {
+            var bobOffset = Mathf.Sin(Time.time * _headbobRate) * _headbobScale;
+            _playerHead.transform.localPosition = _playerHeadOrigin + new Vector3(0f, bobOffset, 0f);
+        }
+        else
+        {
+            _playerHead.transform.localPosition = _playerHeadOrigin;
+        }
     }
 
     #region - Public Events -
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!canMove) return;
+
         var moveDirection = context.ReadValue<float>();
         rb.linearVelocity = new Vector2(moveDirection * _moveSpeed, 0f);
+
+        if (moveDirection > 0 && !_isFacingRight)
+        {
+            Flip();
+        }
+        else if (moveDirection < 0 && _isFacingRight)
+        {
+            Flip();
+        }
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -91,6 +124,7 @@ public class PlayerController : MonoBehaviour
         if (renderer != null && interactable != null)
         {
             renderer.color = Color.cyan;
+            //renderer.material = _highlightMaterial;
 
             // shows the interactable's tooltip
             Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
@@ -105,6 +139,7 @@ public class PlayerController : MonoBehaviour
         if (renderer != null)
         {
             renderer.color = Color.white;
+            //renderer.material = _normMaterial;
             // hides the interactable's tooltip
             UIManager.Instance.HideTooltip();
         }
@@ -130,6 +165,15 @@ public class PlayerController : MonoBehaviour
             Vector3 ip = new Vector3(interactable.interactionPosition.x, interactable.interactionPosition.y, 0f);
             UIManager.Instance.ShowTooltip(interactable.interactionPrompt, _interactableObject.transform.position + ip);
         }
+    }
+
+    private void Flip()
+    {
+        _isFacingRight = !_isFacingRight;
+        // flip only the x component of the scale
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 
     #endregion
