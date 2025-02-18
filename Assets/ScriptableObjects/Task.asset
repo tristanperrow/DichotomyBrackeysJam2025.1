@@ -17,3 +17,4 @@ MonoBehaviour:
   taskInteractionPrompt: Interact
   taskInteractionPromptPosition: {x: -1.075, y: 2}
   timeUntilFail: 20
+  taskUI: {fileID: 9197481963319205126, guid: 12b000359315d6d4aa3c623085f8eb67, type: 3}
