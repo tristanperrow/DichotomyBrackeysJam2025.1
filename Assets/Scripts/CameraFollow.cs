@@ -10,10 +10,13 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Options")]
     [SerializeField] private Bounds _bounds = new Bounds(new Vector2(-1, -1), new Vector2(1, 1));   // world bounds
+    [SerializeField] private float cameraDragTime = 0.3f;   // time it takes for camera to catch up
 
     // properties
     [DoNotSerialize] public Vector2 targetPosition; // position for the camera to try to move to
     [DoNotSerialize] public Bounds cameraBounds;    // actual cameraBounds
+
+    private Vector3 vel = Vector3.zero;
 
     private void Awake()
     {
@@ -36,7 +39,10 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = GetCameraBounds();
+        Vector3 target = GetCameraBounds();
+
+        //transform.position = Vector3.SmoothDamp(transform.position, target, ref vel, cameraDragTime);
+        transform.position = target;
     }
 
     // clamps camera to bounds given

@@ -15,5 +15,5 @@ MonoBehaviour:
   taskName: Testing Task
   taskDescription: This is just a task for testing purposes. Not much to see here.
   taskInteractionPrompt: Interact
-  taskInteractionPromptPosition: {x: -1.1, y: 2}
+  taskInteractionPromptPosition: {x: -1.075, y: 2}
   timeUntilFail: 20
