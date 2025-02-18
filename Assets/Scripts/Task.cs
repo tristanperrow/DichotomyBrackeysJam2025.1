@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 public abstract class Task : Interactable
 {
@@ -67,4 +68,7 @@ public class TaskData : ScriptableObject
 
     [Range(5f, 60f)]
     public float timeUntilFail = 20; // in seconds
+
+    [Header("Task UI")]
+    public VisualTreeAsset taskUI;
 }
