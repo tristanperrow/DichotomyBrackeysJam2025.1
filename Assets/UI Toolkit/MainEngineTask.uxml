@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="main-engine-task-container" style="flex-grow: 1; position: absolute; width: 100%; height: 100%;">
+        <ui:VisualElement name="task-bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/UI_mainengine_blank.png?fileID=2800000&amp;guid=9213204679760504a8c696124c1a79ec&amp;type=3#UI_mainengine_blank&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; position: absolute; width: 100%; height: 100%;" />
+        <ui:VisualElement name="numbers" style="flex-grow: 1; position: absolute;">
+            <ui:Label text="1" name="top-left" style="position: absolute; top: 262px; left: 693px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+            <ui:Label text="1" name="top-center" style="position: absolute; top: 262px; left: 824px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+            <ui:Label text="1" name="top-right" style="position: absolute; top: 262px; left: 946px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+            <ui:Label text="1" name="bot-left" style="position: absolute; top: 486px; left: 696px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+            <ui:Label text="1" name="top-center" style="position: absolute; top: 486px; left: 827px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+            <ui:Label text="1" name="top-right" style="position: absolute; top: 486px; left: 946px; color: rgb(255, 255, 255); height: 170px; width: 89px; -unity-text-align: middle-center; font-size: 80px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="buttons" style="flex-grow: 1; position: absolute;">
+            <ui:Button name="cool-button" style="position: absolute; top: 423px; left: 1239px; height: 61px; width: 48px; background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+            <ui:Button name="heat-button" style="position: absolute; top: 425px; left: 1366px; height: 61px; width: 48px; background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
