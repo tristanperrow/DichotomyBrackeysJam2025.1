@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65445046b86661498de477e88073243, type: 3}
+  m_Name: SwitchesTask
+  m_EditorClassIdentifier: 
+  taskName: Switches
+  taskDescription: You must keep these switches on, they all control of the ship's
+    engine.
+  taskInteractionPrompt: Interact
+  taskInteractionPromptPosition: {x: 0, y: 0}
+  timeUntilFail: 60
+  taskUI: {fileID: 9197481963319205126, guid: 6a3eff72f40678f43a42ed1529df5598, type: 3}
