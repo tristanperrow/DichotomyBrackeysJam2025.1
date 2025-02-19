@@ -10,8 +10,8 @@ public class TaskData : ScriptableObject
     public string taskInteractionPrompt = "Interact";
     public Vector2 taskInteractionPromptPosition = Vector2.zero;
 
-    [Range(5f, 60f)]
-    public float timeUntilFail = 20; // in seconds
+    [Range(5f, 200f)]
+    public float timeUntilFail = 40; // in seconds
 
     [Header("Task UI")]
     public VisualTreeAsset taskUI;
