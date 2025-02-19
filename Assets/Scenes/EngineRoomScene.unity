@@ -1635,10 +1635,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306b0c0f1aaf2cb448f88c21f3d7edcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endTime: 36000
+  tasksPerHour: 3
+  tasks:
+  - {fileID: 2118245752}
   dayOverEvent:
     m_PersistentCalls:
       m_Calls: []
-  endTime: 36000
 --- !u!1 &1047381638
 GameObject:
   m_ObjectHideFlags: 0

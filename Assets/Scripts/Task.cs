@@ -4,12 +4,15 @@ using UnityEngine.UIElements;
 
 public abstract class Task : Interactable
 {
+    static int Count = 0;
+    public int ID = 0;
+
     [Header("Task Settings")]
     public TaskData data;
 
     [Header("Task Events")]
-    public UnityEvent OnTaskCompleted;
-    public UnityEvent OnTaskFailed;
+    public UnityEvent<Task> OnTaskCompleted;
+    public UnityEvent<Task> OnTaskFailed;
 
     [Header("Task State")]
     public float timeRemaining;
@@ -22,7 +25,10 @@ public abstract class Task : Interactable
         interactionPosition = data.taskInteractionPromptPosition;
         // modify task settings
         timeRemaining = data.timeUntilFail;
-        isActive = true;
+        isActive = false;
+        // set ID of task, then increment task Count
+        ID = Count;
+        Count++;
     }
 
     private void Update()
@@ -36,16 +42,26 @@ public abstract class Task : Interactable
         }
     }
 
+    public void ActivateTask()
+    {
+        // set the prompt from interactable
+        interactionPrompt = data.taskInteractionPrompt;
+        interactionPosition = data.taskInteractionPromptPosition;
+        // modify task settings
+        timeRemaining = data.timeUntilFail;
+        isActive = true;
+    }
+
     public void CompleteTask()
     {
         isActive = false;
-        OnTaskCompleted?.Invoke();
+        OnTaskCompleted?.Invoke(this);
     }
 
     public void FailTask()
     {
         isActive = false;
-        OnTaskFailed?.Invoke();
+        OnTaskFailed?.Invoke(this);
     }
 
     public override void Interact()
