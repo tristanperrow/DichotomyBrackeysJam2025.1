@@ -70,7 +70,7 @@ public class DayManager : MonoBehaviour
             if (_timeUntilNextTask <= 0)
             {
                 if (TrySpawnTask())
-                    _timeUntilNextTask = tasksPerHour * 3600;
+                    _timeUntilNextTask = 3600 / tasksPerHour;
             } 
             else
             {
@@ -83,7 +83,8 @@ public class DayManager : MonoBehaviour
 
     public bool TrySpawnTask()
     {
-        // if all available tasks are currently active, return false
+        List<Task> availableTasks = new List<Task>();
+        // check for available (non-active) tasks
         if (_activeTasks.Count == tasks.Count)
             return false;
         foreach (Task task in tasks)
@@ -96,10 +97,19 @@ public class DayManager : MonoBehaviour
             }
             if (inActiveTasks == false)
             {
-                _activeTasks.Add(task);
-                task.ActivateTask();
-                return true;
+                availableTasks.Add(task);
             }
+        }
+
+        if (availableTasks.Count > 0)
+        {
+            // get random task from available tasks
+            int taskIndex = Random.Range(0, availableTasks.Count);
+            Task task = availableTasks[taskIndex];
+            // add task to active tasks, then return true
+            _activeTasks.Add(task);
+            task.ActivateTask();
+            return true;
         }
 
         return false;

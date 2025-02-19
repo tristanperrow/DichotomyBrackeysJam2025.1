@@ -91,6 +91,14 @@ public class PlayerController : MonoBehaviour
         foreach (var hit in hits)
         {
             float distance = Vector2.Distance(transform.position, hit.transform.position);
+
+            // verify if a task is active
+            if (hit.transform.gameObject.TryGetComponent<Task>(out Task task))
+            {
+                if (!task.isActive) continue;
+            }
+
+            // change the closest object
             if (distance < closestDistance)
             {
                 closestDistance = distance;

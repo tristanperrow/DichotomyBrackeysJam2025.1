@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Task.uss?fileID=7433441132597879392&amp;guid=e69d6515c0a7c3e45a4c96687e40efa7&amp;type=3#Task" />
+    <ui:VisualElement name="battleship-task-container" class="task-container" style="flex-grow: 1;">
+        <ui:VisualElement name="task-bg" class="task-bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/battlefield_screen.png?fileID=2800000&amp;guid=15d31f0c4e1f44d4082437c007b59e91&amp;type=3#battlefield_screen&quot;);" />
+        <ui:VisualElement name="task-grid" style="flex-grow: 1; position: absolute; height: 398px; width: 401px; top: 395px; left: 754px; background-image: url(&quot;project://database/Assets/Sprites/BatShip_grid.png?fileID=2800000&amp;guid=345a3c87cd5de164b96d4ad197bc761d&amp;type=3#BatShip_grid&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit;" />
+        <ui:VisualElement name="task-label" style="flex-grow: 1; position: absolute; height: 178px; width: 335px; top: 217px; left: 790px; background-size: contain; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/Sprites/BatShip_text.png?fileID=2800000&amp;guid=b60e3f2fa4e7d6242a61bccf16645e27&amp;type=3#BatShip_text&quot;);" />
+        <ui:VisualElement name="task-focusable" style="flex-grow: 1;">
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 905px; width: 303px; top: 76px; left: 801px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 843px; width: 137px; top: 112px; left: 675px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 785px; width: 103px; top: 160px; left: 574px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 614px; width: 74px; top: 160px; left: 503px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 849px; width: 148px; top: 112px; left: 1106px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 808px; width: 118px; top: 153px; left: 1229px;" />
+            <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; height: 766px; width: 75px; top: 153px; left: 1349px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="buttons" style="flex-grow: 1; position: absolute;" />
+    </ui:VisualElement>
+</ui:UXML>

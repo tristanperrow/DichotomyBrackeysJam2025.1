@@ -1,0 +1,20 @@
+.drawn-text {
+    -unity-font-definition: url("project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&guid=4a4453b6c6ff46449be5c459584546bf&type=3#Hermetico-Regular");
+    font-size: 110px;
+}
+
+.task-container {
+    position: absolute;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.task-bg {
+    -unity-background-scale-mode: scale-to-fit;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-grow: 1;
+}

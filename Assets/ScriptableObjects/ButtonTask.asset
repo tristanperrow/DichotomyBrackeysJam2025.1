@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Task
+  m_Name: ButtonTask
   m_EditorClassIdentifier: Assembly-CSharp::TaskData
-  taskName: Testing Task
-  taskDescription: This is just a task for testing purposes. Not much to see here.
+  taskName: Buttons
+  taskDescription: Many, many buttons. You don't know what they do but your boss
+    said to keep them all on!
   taskInteractionPrompt: Interact
-  taskInteractionPromptPosition: {x: -1.075, y: 2}
-  timeUntilFail: 20
-  taskUI: {fileID: 9197481963319205126, guid: a1f100736a0468b4b87d1a1c0334ac0d, type: 3}
+  taskInteractionPromptPosition: {x: 0, y: 0}
+  timeUntilFail: 30
+  taskUI: {fileID: 9197481963319205126, guid: 4ab89e7f6320fd04aac69899308d0a8d, type: 3}
