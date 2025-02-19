@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BatShip_crosshair_0: 5898616063337237144
+      BatShip_crosshair_1: 7894745645403899930
+      BatShip_crosshair_2: -4375746790085747985
+      BatShip_crosshair_3: 1070822144636510376
+      BatShip_crosshair_4: 1705567471264901585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

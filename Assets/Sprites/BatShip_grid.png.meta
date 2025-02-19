@@ -760,7 +760,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BatShip_grid_0: -1221419185455995009
+      BatShip_grid_1: -2392793606792363821
+      BatShip_grid_10: 5415124999466291152
+      BatShip_grid_11: 937541941025392421
+      BatShip_grid_12: -5138429631814063366
+      BatShip_grid_13: -8345220288701768291
+      BatShip_grid_14: 4043849796577178755
+      BatShip_grid_15: -6194652520125381405
+      BatShip_grid_16: 8118618624035667688
+      BatShip_grid_17: -7157030741917370113
+      BatShip_grid_18: 5864017431679285304
+      BatShip_grid_19: 6892709347535285437
+      BatShip_grid_2: -6603085890763896597
+      BatShip_grid_20: 6917418794418760431
+      BatShip_grid_21: -5566267123326364389
+      BatShip_grid_22: -7988368768379543770
+      BatShip_grid_23: 7657370801145718449
+      BatShip_grid_24: -4582716807571643536
+      BatShip_grid_3: 6084145696856426199
+      BatShip_grid_4: -6711896167894255244
+      BatShip_grid_5: 3919732365211521950
+      BatShip_grid_6: 8894774133431543362
+      BatShip_grid_7: -1471793094625245650
+      BatShip_grid_8: -6723603817316767020
+      BatShip_grid_9: 6528088450535895466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
