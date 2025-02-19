@@ -18,3 +18,11 @@
     position: absolute;
     flex-grow: 1;
 }
+
+.unity-base-text-field__input {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    color: rgb(152, 152, 152);
+}
