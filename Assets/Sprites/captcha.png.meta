@@ -1,0 +1,1293 @@
+fileFormatVersion: 2
+guid: 0f67de59a6f13834bb2ab0c61070eb46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5714608199824858870
+    second: captcha_0
+  - first:
+      213: 902267683074716200
+    second: captcha_1
+  - first:
+      213: 2901899083783216921
+    second: captcha_2
+  - first:
+      213: -6520162473323324130
+    second: captcha_3
+  - first:
+      213: -5847627429371451793
+    second: captcha_4
+  - first:
+      213: -3202372395009320011
+    second: captcha_5
+  - first:
+      213: 5147950585111615032
+    second: captcha_6
+  - first:
+      213: 4454964113879005978
+    second: captcha_7
+  - first:
+      213: -240234411485118309
+    second: captcha_8
+  - first:
+      213: 4756702269070616494
+    second: captcha_9
+  - first:
+      213: -4988883511848191017
+    second: captcha_10
+  - first:
+      213: 6734591494021231378
+    second: captcha_11
+  - first:
+      213: -3415208871874129185
+    second: captcha_12
+  - first:
+      213: -6082513512674676127
+    second: captcha_13
+  - first:
+      213: 5723629011023505878
+    second: captcha_14
+  - first:
+      213: 453993344632307459
+    second: captcha_15
+  - first:
+      213: 8444739687207579800
+    second: captcha_16
+  - first:
+      213: -1791115740125039319
+    second: captcha_17
+  - first:
+      213: 3868579591896306974
+    second: captcha_18
+  - first:
+      213: 4724963334097985434
+    second: captcha_19
+  - first:
+      213: -1076489354686115081
+    second: captcha_20
+  - first:
+      213: 1402152797575001733
+    second: captcha_21
+  - first:
+      213: -4510806707312680725
+    second: captcha_22
+  - first:
+      213: 3977733425433016713
+    second: captcha_23
+  - first:
+      213: 7056643722459463569
+    second: captcha_24
+  - first:
+      213: -8779871613627745156
+    second: captcha_25
+  - first:
+      213: 2581165563422497383
+    second: captcha_26
+  - first:
+      213: -1680057311191298305
+    second: captcha_27
+  - first:
+      213: 9048816046625491863
+    second: captcha_28
+  - first:
+      213: -5437048749172109248
+    second: captcha_29
+  - first:
+      213: 2640287824295608797
+    second: captcha_30
+  - first:
+      213: 2876097164369721251
+    second: captcha_31
+  - first:
+      213: -6719775711295700883
+    second: captcha_32
+  - first:
+      213: -5730857656077184211
+    second: captcha_33
+  - first:
+      213: -5091381434119988022
+    second: captcha_34
+  - first:
+      213: -5058085993412681864
+    second: captcha_35
+  - first:
+      213: 6878865755713144328
+    second: captcha_36
+  - first:
+      213: 5513595682818100112
+    second: captcha_37
+  - first:
+      213: -5176842506754362572
+    second: captcha_38
+  - first:
+      213: -970573804632684327
+    second: captcha_39
+  - first:
+      213: -5092908727950348947
+    second: captcha_40
+  - first:
+      213: -129869592110872586
+    second: captcha_41
+  - first:
+      213: -3518881008300279311
+    second: captcha_42
+  - first:
+      213: -2138293914867924722
+    second: captcha_43
+  - first:
+      213: 1291223875519286018
+    second: captcha_44
+  - first:
+      213: -7043217904178195629
+    second: captcha_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: captcha_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 400
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01a7ea9e12a1b0b0800000000000000
+      internalID: -5714608199824858870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 399
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822bbf56daf758c00800000000000000
+      internalID: 902267683074716200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 400
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f1eee77dd954820800000000000000
+      internalID: 2901899083783216921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 400
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d1bbb96cab385a0800000000000000
+      internalID: -6520162473323324130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 400
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66eb75c5dd09dea0800000000000000
+      internalID: -5847627429371451793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_5
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 400
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbd3fc0643ee83d0800000000000000
+      internalID: -3202372395009320011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 414
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83697da38c1317740800000000000000
+      internalID: 5147950585111615032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 400
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bfed6124633dd30800000000000000
+      internalID: 4454964113879005978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_8
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 393
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90ca9853148aacf0800000000000000
+      internalID: -240234411485118309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 400
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7af3af283330240800000000000000
+      internalID: 4756702269070616494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 400
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db3c72d0ece3cab0800000000000000
+      internalID: -4988883511848191017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 399
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213b08c4843167d50800000000000000
+      internalID: 6734591494021231378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 400
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd21e2620adba90d0800000000000000
+      internalID: -3415208871874129185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_13
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 400
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162338fcf22969ba0800000000000000
+      internalID: -6082513512674676127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 376
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d92d2ca24a6e6f40800000000000000
+      internalID: 5723629011023505878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f3335aa88ec4600800000000000000
+      internalID: 453993344632307459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890b6acd00eb13570800000000000000
+      internalID: 8444739687207579800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9257c3e59bda427e0800000000000000
+      internalID: -1791115740125039319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e151e4864a4ffa530800000000000000
+      internalID: 3868579591896306974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fd7a15e11729140800000000000000
+      internalID: 4724963334097985434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_20
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 376
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2d179a2aa8f01f0800000000000000
+      internalID: -1076489354686115081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586374c5a82757310800000000000000
+      internalID: 1402152797575001733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0ad20f2356661c0800000000000000
+      internalID: -4510806707312680725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989f12ab97fb33730800000000000000
+      internalID: 3977733425433016713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fbfafe31c3ee160800000000000000
+      internalID: 7056643722459463569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cbe200941a72680800000000000000
+      internalID: -8779871613627745156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_26
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ad442876422d320800000000000000
+      internalID: 2581165563422497383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe052cd6cc3fa8e0800000000000000
+      internalID: -1680057311191298305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_28
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b87f0704ad39d70800000000000000
+      internalID: 9048816046625491863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_29
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0405d1728f8bb84b0800000000000000
+      internalID: -5437048749172109248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_30
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1cdef89cf24a420800000000000000
+      internalID: 2640287824295608797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_31
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7f3cdf123f9e720800000000000000
+      internalID: 2876097164369721251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_32
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 376
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d600cede79f8eb2a0800000000000000
+      internalID: -6719775711295700883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_33
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23113f3357e770b0800000000000000
+      internalID: -5730857656077184211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_34
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc524b9f87c759b0800000000000000
+      internalID: -5091381434119988022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_35
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f124f76911ec9b0800000000000000
+      internalID: -5058085993412681864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_36
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80681e285f3a67f50800000000000000
+      internalID: 6878865755713144328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_37
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b008daf0a348c40800000000000000
+      internalID: 5513595682818100112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_38
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 376
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43373ce0b292828b0800000000000000
+      internalID: -5176842506754362572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_39
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8c19a5444d782f0800000000000000
+      internalID: -970573804632684327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_40
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 376
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d680dce7a5259b0800000000000000
+      internalID: -5092908727950348947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_41
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 376
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f74b174b4c923ef0800000000000000
+      internalID: -129869592110872586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_42
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9b465ed5c6a2fc0800000000000000
+      internalID: -3518881008300279311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_43
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 376
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e010bea73014352e0800000000000000
+      internalID: -2138293914867924722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_44
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 376
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b84d906495be110800000000000000
+      internalID: 1291223875519286018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: captcha_45
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 21
+        width: 603
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35399c9f1a6714e90800000000000000
+      internalID: -7043217904178195629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
