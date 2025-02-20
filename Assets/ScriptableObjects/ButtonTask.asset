@@ -17,5 +17,5 @@ MonoBehaviour:
     said to keep them all on!
   taskInteractionPrompt: Interact
   taskInteractionPromptPosition: {x: 0, y: 0}
-  timeUntilFail: 30
+  timeUntilFail: 200
   taskUI: {fileID: 9197481963319205126, guid: 4ab89e7f6320fd04aac69899308d0a8d, type: 3}
