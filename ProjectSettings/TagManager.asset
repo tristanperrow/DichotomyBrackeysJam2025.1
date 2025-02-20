@@ -46,6 +46,12 @@ TagManager:
   - name: Player
     uniqueID: 644381281
     locked: 0
+  - name: Foreground
+    uniqueID: 2720212735
+    locked: 0
+  - name: ForestGround
+    uniqueID: 3363248549
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1
