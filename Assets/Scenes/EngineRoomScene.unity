@@ -676,7 +676,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,7 +763,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1009,7 +1009,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1175,6 +1175,90 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &547554269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547554271}
+  - component: {fileID: 547554270}
+  m_Layer: 0
+  m_Name: Global Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &547554270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547554269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &547554271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547554269}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1540814552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576734043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1335,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1353,7 +1437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 696497647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97926d925b4cf754cae4ec9415704119, type: 3}
+  m_Script: {fileID: 11500000, guid: 1afb0c76f89847948a9869b0089b13e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionPrompt: Interact
@@ -1362,7 +1446,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   ID: 0
-  data: {fileID: 11400000, guid: 3978aa58268219e41a466be48c5d454d, type: 2}
+  data: {fileID: 11400000, guid: efb4be517cdc7ca4e8545e56eae486d8, type: 2}
   OnTaskCompleted:
     m_PersistentCalls:
       m_Calls: []
@@ -1371,6 +1455,9 @@ MonoBehaviour:
       m_Calls: []
   timeRemaining: 0
   isActive: 0
+  taskOpen: 0
+  onButton: {fileID: 2800000, guid: 9a6158e3cdacf10498a083b0f1e6aebf, type: 3}
+  offButton: {fileID: 2800000, guid: ec00692e0b5db05458314c5c388bc4c3, type: 3}
 --- !u!1 &776502733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1500,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1515,7 +1602,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 776502733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97926d925b4cf754cae4ec9415704119, type: 3}
+  m_Script: {fileID: 11500000, guid: bf0d0825b5cbcff46ae21d41dd38c45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionPrompt: Interact
@@ -1533,6 +1620,7 @@ MonoBehaviour:
       m_Calls: []
   timeRemaining: 0
   isActive: 0
+  taskOpen: 0
 --- !u!1 &821496847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,7 +1663,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1677,7 +1765,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 821496847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97926d925b4cf754cae4ec9415704119, type: 3}
+  m_Script: {fileID: 11500000, guid: a3b1311fb8b444141b3949e62e2b1002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionPrompt: Interact
@@ -1695,6 +1783,9 @@ MonoBehaviour:
       m_Calls: []
   timeRemaining: 0
   isActive: 0
+  taskOpen: 0
+  onButton: {fileID: 0}
+  offButton: {fileID: 0}
 --- !u!1 &831470428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,7 +1860,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1863,11 +1954,10 @@ MonoBehaviour:
   endTime: 36000
   tasksPerHour: 20
   tasks:
-  - {fileID: 2118245752}
+  - {fileID: 2118245754}
   - {fileID: 821496851}
-  - {fileID: 696497651}
   - {fileID: 776502737}
-  - {fileID: 1977061822}
+  - {fileID: 696497651}
   dayOverEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1911,7 +2001,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2191,7 +2281,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2293,7 +2383,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2735,7 +2825,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2823,7 +2913,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2880,10 +2970,11 @@ Transform:
   m_GameObject: {fileID: 1540814551}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8211956, y: 3.8021538, z: 493.10242}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 547554271}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938066511
@@ -2929,7 +3020,7 @@ GameObject:
   - component: {fileID: 1977061821}
   - component: {fileID: 1977061820}
   - component: {fileID: 1977061823}
-  - component: {fileID: 1977061822}
+  - component: {fileID: 1977061824}
   m_Layer: 8
   m_Name: main_engine_0
   m_TagString: Untagged
@@ -2960,7 +3051,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3007,33 +3098,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1977061822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977061819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97926d925b4cf754cae4ec9415704119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionPrompt: Interact
-  interactionPosition: {x: 0, y: 0}
-  OnInteracted:
-    m_PersistentCalls:
-      m_Calls: []
-  ID: 0
-  data: {fileID: 11400000, guid: d923f42731f780749a35e48ec0bd7839, type: 2}
-  OnTaskCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTaskFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  timeRemaining: 0
-  isActive: 0
 --- !u!61 &1977061823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3080,6 +3144,38 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.34, y: 2.53}
   m_EdgeRadius: 0
+--- !u!114 &1977061824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977061819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7c18fda4cc314eb633d54528cf991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionPrompt: Interact
+  interactionPosition: {x: 0, y: 0}
+  OnInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  ID: 0
+  data: {fileID: 11400000, guid: d923f42731f780749a35e48ec0bd7839, type: 2}
+  OnTaskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTaskFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  timeRemaining: 0
+  isActive: 0
+  engineTemp: 120
+  freezePoint: 32
+  boilPoint: 212
+  cooling: 1
+  taskOpen: 0
 --- !u!1 &2023474032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,6 +3290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inTask: 0
+  OnTaskClosed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2118245749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,7 +3304,7 @@ GameObject:
   - component: {fileID: 2118245751}
   - component: {fileID: 2118245750}
   - component: {fileID: 2118245753}
-  - component: {fileID: 2118245752}
+  - component: {fileID: 2118245754}
   m_Layer: 8
   m_Name: engine_square_0
   m_TagString: Untagged
@@ -3236,7 +3335,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3283,33 +3382,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2118245752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118245749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97926d925b4cf754cae4ec9415704119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionPrompt: Interact
-  interactionPosition: {x: 0, y: 0}
-  OnInteracted:
-    m_PersistentCalls:
-      m_Calls: []
-  ID: 0
-  data: {fileID: 11400000, guid: 3978aa58268219e41a466be48c5d454d, type: 2}
-  OnTaskCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTaskFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  timeRemaining: 0
-  isActive: 0
 --- !u!61 &2118245753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3356,6 +3428,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.2222524, y: 3.31}
   m_EdgeRadius: 0
+--- !u!114 &2118245754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118245749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e8ba434067773488a583aed558d236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionPrompt: Interact
+  interactionPosition: {x: 0, y: 0}
+  OnInteracted:
+    m_PersistentCalls:
+      m_Calls: []
+  ID: 0
+  data: {fileID: 11400000, guid: 3978aa58268219e41a466be48c5d454d, type: 2}
+  OnTaskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTaskFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  timeRemaining: 0
+  isActive: 0
+  taskOpen: 0
+  onButton: {fileID: 2800000, guid: f0e1a549df6db714596b9b97a207f715, type: 3}
+  offButton: {fileID: 2800000, guid: 58f92331fda790d49a6cfe74473ce677, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

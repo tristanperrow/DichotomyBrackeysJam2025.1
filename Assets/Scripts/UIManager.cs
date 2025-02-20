@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(UIDocument))]
@@ -10,10 +11,12 @@ public class UIManager : MonoBehaviour
     private VisualElement _tooltipContainer;
     private Label _tooltipLabel;
 
-    private VisualElement _taskContainer;
+    public VisualElement _taskContainer;
 
     // state
     public bool inTask = false;
+
+    public UnityEvent OnTaskClosed;
 
     private void Awake()
     {
@@ -118,6 +121,8 @@ public class UIManager : MonoBehaviour
     {
         // don't run if not in a task
         if (!inTask) return;
+        // fire closed event
+        OnTaskClosed.Invoke();
         // delete all children of _taskContainer
         _taskContainer.Clear();
         // disable the _taskContainer ui
