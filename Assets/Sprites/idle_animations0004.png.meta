@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ab4e791fa5749d14b85fd3828e1efc11
+guid: 712924116496e9d4c9dcb1c3e5e6860a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1647019457119506494
-    second: boss_cooper_0
+      213: -6246907546908529867
+    second: idle_animations0004_0
+  - first:
+      213: 8778308517029949247
+    second: idle_animations0004_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_cooper_0
+      name: idle_animations0004_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 0
-        width: 1421
-        height: 1627
+        x: 130
+        y: 158
+        width: 73
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e30d3cf48736bd610800000000000000
-      internalID: 1647019457119506494
+      spriteID: 53b6fc10fa68e49a0800000000000000
+      internalID: -6246907546908529867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_animations0004_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 42
+        width: 95
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f2b563611d2d970800000000000000
+      internalID: 8778308517029949247
       vertices: []
       indices: 
       edges: []
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      boss_cooper_0: 1647019457119506494
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

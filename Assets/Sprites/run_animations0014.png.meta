@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab4e791fa5749d14b85fd3828e1efc11
+guid: 3c3c5117f6bd0d141adf946b7bede681
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1647019457119506494
-    second: boss_cooper_0
+      213: -1902902339216078286
+    second: run_animations0014_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_cooper_0
+      name: run_animations0014_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 0
-        width: 1421
-        height: 1627
+        x: 129
+        y: 56
+        width: 97
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e30d3cf48736bd610800000000000000
-      internalID: 1647019457119506494
+      spriteID: 23a04cc87688795e0800000000000000
+      internalID: -1902902339216078286
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      boss_cooper_0: 1647019457119506494
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

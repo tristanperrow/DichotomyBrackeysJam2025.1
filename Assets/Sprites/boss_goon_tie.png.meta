@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boss_goon_tie_0: -6439686220394052849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

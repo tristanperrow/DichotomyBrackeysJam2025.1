@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ab4e791fa5749d14b85fd3828e1efc11
+guid: 4afa70b47e99f6f4a851ee37fd78ed5a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1647019457119506494
-    second: boss_cooper_0
+      213: 7992615923878000872
+    second: idle_animations0000_0
+  - first:
+      213: -3841323513521153619
+    second: idle_animations0000_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,23 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_cooper_0
+      name: idle_animations0000_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 0
-        width: 1421
-        height: 1627
+        x: 46
+        y: 42
+        width: 244
+        height: 255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e30d3cf48736bd610800000000000000
-      internalID: 1647019457119506494
+      spriteID: 8e8f0e806d97bee60800000000000000
+      internalID: 7992615923878000872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_animations0000_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 156
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9573ddd90e0bac0800000000000000
+      internalID: -3841323513521153619
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8669b543348556b459bb4357d009297b
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      boss_cooper_0: 1647019457119506494
+      idle_animations0000_0: 7992615923878000872
+      idle_animations0000_1: -3841323513521153619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
