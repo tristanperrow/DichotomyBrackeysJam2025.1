@@ -2242,8 +2242,10 @@ MonoBehaviour:
   timeRemaining: 0
   isActive: 0
   taskOpen: 0
-  onButton: {fileID: 0}
-  offButton: {fileID: 0}
+  offset: {x: -25, y: -30}
+  missTex: {fileID: 2800000, guid: 3b15213039b6c79408e77681c09e0b00, type: 3}
+  hitTex: {fileID: 2800000, guid: c829057231e3f3b478e13884dc5c9434, type: 3}
+  battleshipTex: {fileID: 2800000, guid: 8b64fc05530e5d1459b5fbccc9703839, type: 3}
 --- !u!1 &831470428
 GameObject:
   m_ObjectHideFlags: 0

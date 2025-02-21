@@ -12,10 +12,30 @@ public class Task_Switches : Task
     [SerializeField] private Texture2D offButton;
 
     // Task Activation
-    private bool[] switchState = new bool[40];
+    private bool[] switchState = new bool[15];
 
     // UI
     private VisualElement switchesContainer;
+
+    private void TryCompleteTask()
+    {
+        var allOn = true;
+        foreach (var state in switchState)
+        {
+            if (state == false)
+            {
+                allOn = false;
+                break;
+            }
+        }
+
+        if (allOn)
+        {
+            CompleteTask();
+            //UIManager.Instance.HideTask();
+            //CloseTask();
+        }
+    }
 
     public override void OpenTask()
     {
@@ -25,21 +45,43 @@ public class Task_Switches : Task
 
         switchesContainer = UIManager.Instance._taskContainer.Q<VisualElement>("switches");
 
+        int i = 0;
         foreach (VisualElement element in switchesContainer.Children())
         {
+            if (switchState[i])
+                element.style.backgroundImage = new StyleBackground(onButton);
+            else
+                element.style.backgroundImage = new StyleBackground(offButton);
+
+            int j = i;
             element.AddManipulator(new Clickable((evt) =>
             {
                 if (switchesContainer.panel.focusController.focusedElement == element)
                 {
-                    
-                }
+                    switchState[j] = !switchState[j];
+                    if (switchState[j])
+                        element.style.backgroundImage = new StyleBackground(onButton);
+                    else
+                        element.style.backgroundImage = new StyleBackground(offButton);
+
+                    TryCompleteTask();
+                };
             }));
+
+            i++;
         }
     }
 
     protected override void OnActivatedTask()
     {
         // on activation
+        for (int i = 0; i < switchState.Length; i++)
+        {
+            if (Random.Range(0, 2) == 0)
+                switchState[i] = true;
+            else
+                switchState[i] = false;
+        }
     }
 
     public void CloseTask()
