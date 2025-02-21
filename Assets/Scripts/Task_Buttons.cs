@@ -31,8 +31,8 @@ public class Task_Buttons : Task
         if (allOn)
         {
             CompleteTask();
-            UIManager.Instance.HideTask();
-            CloseTask();
+            //UIManager.Instance.HideTask();
+            //CloseTask();
         }
     }
 
