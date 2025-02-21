@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c65445046b86661498de477e88073243, type: 3}
   m_Name: ButtonTask
   m_EditorClassIdentifier: Assembly-CSharp::TaskData
   taskName: Buttons
-  taskDescription: Many, many buttons. You don't know what they do but your boss
-    said to keep them all on!
+  taskDescription: You're not sure what these buttons do, but the company asks you
+    to keep them on.
   taskInteractionPrompt: Interact
   taskInteractionPromptPosition: {x: 0, y: 0}
-  timeUntilFail: 200
+  timeUntilFail: 40
   taskUI: {fileID: 9197481963319205126, guid: 4ab89e7f6320fd04aac69899308d0a8d, type: 3}

@@ -1,0 +1,48 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenu.uss?fileID=7433441132597879392&amp;guid=c6e8dad41383da44b8bff49084b9c7b1&amp;type=3#MainMenu" />
+    <ui:VisualElement name="main-menu-container" style="flex-grow: 1; background-color: rgb(0, 0, 0); background-image: url(&quot;project://database/Assets/Sprites/captcha_screen.png?fileID=2800000&amp;guid=260232fd894a6bf419f9a84dc88ffe8f&amp;type=3#captcha_screen&quot;); background-size: 200% 200%;">
+        <ui:VisualElement name="window" style="flex-grow: 1; background-color: rgb(21, 25, 34); margin-left: 150px; margin-right: 150px; margin-top: 50px; margin-bottom: 50px; -unity-text-outline-color: rgb(255, 255, 255); -unity-text-outline-width: 0; border-left-color: rgb(243, 243, 243); border-right-color: rgb(243, 243, 243); border-top-color: rgb(243, 243, 243); border-bottom-color: rgb(243, 243, 243); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; padding-top: 15px; padding-right: 15px; padding-left: 15px; padding-bottom: 15px;">
+            <ui:VisualElement name="top-bar" style="flex-grow: 0; height: auto; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 40px; flex-direction: row;">
+                <ui:VisualElement name="FileLocation" style="flex-grow: 1; height: 40px; color: rgb(0, 0, 0); background-color: rgb(223, 243, 255); margin-right: 10px; align-items: flex-start; justify-content: center;">
+                    <ui:Label text="E:\Dichotomy\Projects\BlueCollar" name="LocationLabel" style="margin-left: 15px; font-size: 24px; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-style: normal; -unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="CloseMenu" style="flex-grow: 0; background-color: rgb(223, 243, 255); width: 60px; margin-right: 0; margin-left: 10px; align-items: center; justify-content: center;">
+                    <ui:Label text="X" name="CloseLabel" enable-rich-text="true" parse-escape-sequences="false" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;); font-size: 32px; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="console" style="flex-grow: 0;">
+                <ui:Label text="[Message: Dichotomy]  BleClr v0.1 instance loaded" class="consoleText" />
+                <ui:Label text="[Info   : Patch]  level loaded! (0.2s)" class="consoleText" />
+            </ui:VisualElement>
+            <ui:VisualElement name="title-bar-container" style="flex-grow: 0; flex-direction: row; margin-top: 30px; margin-bottom: 20px;">
+                <ui:VisualElement name="progress-bar" style="flex-grow: 1; height: 100%; width: 60px; background-color: rgb(223, 243, 255); margin-right: 10px;" />
+                <ui:Label text="\\\\" name="lines" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;); color: rgb(223, 243, 255); font-size: 120px; -unity-text-align: lower-left; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 10px;" />
+                <ui:VisualElement name="right" style="flex-grow: 0; margin-left: 20px; margin-right: 40px;">
+                    <ui:VisualElement name="title-container" style="flex-grow: 1; flex-direction: row;">
+                        <ui:Label text="Blue" name="blue" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;); color: rgb(0, 169, 255); -unity-text-align: lower-left; font-size: 80px; margin-top: 0; margin-right: 15px; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        <ui:Label text="Collar" name="collar" style="color: rgb(223, 243, 255); font-size: 80px; -unity-text-align: lower-left; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 15px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;);" />
+                    </ui:VisualElement>
+                    <ui:Label text="[Info   : Creator] Programmer = tristan.Perrow" name="credits" class="consoleText" />
+                    <ui:Label text="[Info   : Creator] Art &amp; Design = lorenzo.Urayan" name="credits" class="consoleText" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="console" style="flex-grow: 0;">
+                <ui:Label text="[Info   : Terminal] builtIn.Difficulty = FUN" name="Label" class="consoleText" />
+                <ui:Label text="[Job    : Assets] Loading Player EXECUTED" name="Label" class="consoleText" />
+                <ui:Label text="[Warning: Public] Removing Traces. . ." name="Label" class="consoleText" style="color: rgb(255, 222, 172);" />
+                <ui:Label text="[Warning: Public] Removed." name="Label" class="consoleText" style="color: rgb(255, 222, 172);" />
+                <ui:Label text="[Job    : Assets] Checking: job.Applicator.start . . ." name="Label" class="consoleText" />
+                <ui:Label text="[Onboard: Request] 8 matches found!" name="Label" class="consoleText" />
+            </ui:VisualElement>
+            <ui:VisualElement name="bottom-container" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="empty-space" style="flex-grow: 1;" />
+                <ui:VisualElement name="buttons-container" style="flex-grow: 1; margin-right: 15px; margin-bottom: 15px; margin-top: 60px; margin-left: 15px; align-items: flex-end;">
+                    <ui:Button text="Continue" name="continue-button" class="menuButton" />
+                    <ui:Button text="New Game" name="new-game-button" enable-rich-text="true" class="menuButton" />
+                    <ui:Button text="Options" name="options-button" class="menuButton" />
+                    <ui:Button text="Exit" name="button" class="menuButton" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

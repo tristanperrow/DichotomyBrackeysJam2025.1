@@ -18,7 +18,7 @@ public abstract class Task : Interactable
     public float timeRemaining;
     public bool isActive = false;
 
-    private void Awake()
+    private void Start()
     {
         // set the prompt from interactable
         interactionPrompt = data.taskInteractionPrompt;

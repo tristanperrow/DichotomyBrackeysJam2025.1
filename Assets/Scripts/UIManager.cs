@@ -32,6 +32,9 @@ public class UIManager : MonoBehaviour
 
         InitGameHUD();
         inTask = false;
+
+        // reset scene transition manager sorting order
+        SceneTransitionManager.Instance.GetComponent<UIDocument>().sortingOrder = 0;
     }
 
     private void InitGameHUD()

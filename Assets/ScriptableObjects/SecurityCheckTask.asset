@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65445046b86661498de477e88073243, type: 3}
   m_Name: SecurityCheckTask
   m_EditorClassIdentifier: 
-  taskName: Security Check Task
+  taskName: Security Check
   taskDescription: The company requires that you complete this task to verify you
     are human.
   taskInteractionPrompt: Interact

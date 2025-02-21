@@ -35,20 +35,23 @@ public class DayManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-        } else
-        {
-            Debug.LogWarning("There are multiple DayManager classes.");
         }
-
-        foreach (var task in tasks)
+        else
         {
-            task.OnTaskCompleted.AddListener(TaskCompleted);
-            task.OnTaskFailed.AddListener(TaskFailed);
+            // destroy duplicate instances
+            Debug.LogWarning("There are multiple DayManager classes.");
+            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
+        foreach (var task in tasks)
+        {
+            task.OnTaskCompleted.AddListener(TaskCompleted);
+            task.OnTaskFailed.AddListener(TaskFailed);
+        }
+
         _dayTime = 0;
         _endTime = endTime;
         _hasDayEnded = false;

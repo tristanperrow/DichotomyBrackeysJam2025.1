@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SwitchesTask
   m_EditorClassIdentifier: 
   taskName: Switches
-  taskDescription: You must keep these switches on, they all control of the ship's
+  taskDescription: You must keep these switches on, they allow control of the ship's
     engine.
   taskInteractionPrompt: Interact
   taskInteractionPromptPosition: {x: 0, y: 0}
