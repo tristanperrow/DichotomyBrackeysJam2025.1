@@ -25,7 +25,6 @@ public class DayManager : MonoBehaviour
     // if the day has ended
     private bool _hasDayEnded = false;
 
-
     // task properties
     private float _timeUntilNextTask = 0f;
     private List<Task> _activeTasks = new List<Task>();
@@ -35,6 +34,9 @@ public class DayManager : MonoBehaviour
     private float _circleHideTime = 0.5f;
     private float _lastStateTime = 1f;
     private bool _circleState;
+
+    private float _timeIncrementRate = 15f;
+    private float _lastIncrement = 0f;
 
     private void Awake()
     {
@@ -103,6 +105,15 @@ public class DayManager : MonoBehaviour
             _circleState = true;
         }
 
+        /* TODO: Increment in 15 minute periods
+        var mins = Mathf.FloorToInt((_dayTime % 3600) / 60);
+        if (mins > _timeIncrementRate + _lastIncrement || _timeIncrementRate < mins - 30)
+        {
+            _lastIncrement = Mathf.FloorToInt(mins / 15) * 15;
+            UIManager.Instance.UpdateSecurityCamHud(GetDayTimeString(), _circleState);
+        }
+        */
+
         UIManager.Instance.UpdateSecurityCamHud(GetDayTimeString(), _circleState);
     }
 
@@ -163,7 +174,7 @@ public class DayManager : MonoBehaviour
     public string GetDayTimeString()
     {
         int hours = Mathf.FloorToInt(_dayTime / 3600);
-        int minutes = Mathf.FloorToInt((_dayTime % 3600) / 60);
+        int minutes = Mathf.FloorToInt(Mathf.FloorToInt((_dayTime % 3600) / 60) / 15) * 15;
         return $"{hours:00}:{minutes:00}";
     }
 }
