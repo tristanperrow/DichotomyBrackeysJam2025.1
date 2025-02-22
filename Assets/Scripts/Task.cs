@@ -63,6 +63,7 @@ public abstract class Task : Interactable
     {
         isActive = false;
         OnTaskFailed?.Invoke(this);
+        UIManager.Instance.HideTask();
     }
 
     public override void Interact()

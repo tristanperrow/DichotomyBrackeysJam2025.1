@@ -34,6 +34,9 @@ public class Task_Engine : Task
     private Button coolButton;
     private Button heatButton;
 
+    // audio
+    [SerializeField] private AudioSource buttonSound;
+
     private void Awake()
     {
         if (Instance == null)
@@ -121,11 +124,13 @@ public class Task_Engine : Task
     private void Cool()
     {
         cooling = true;
+        buttonSound.Play();
     }
 
     private void Heat()
     {
         cooling = false;
+        buttonSound.Play();
     }
 
     public override void OpenTask()

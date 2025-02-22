@@ -17,6 +17,10 @@ public class Task_Switches : Task
     // UI
     private VisualElement switchesContainer;
 
+    // audio
+    [SerializeField] private AudioSource flickOnSound;
+    [SerializeField] private AudioSource flickOffSound;
+
     private void TryCompleteTask()
     {
         var allOn = true;
@@ -60,9 +64,15 @@ public class Task_Switches : Task
                 {
                     switchState[j] = !switchState[j];
                     if (switchState[j])
+                    {
                         element.style.backgroundImage = new StyleBackground(onButton);
+                        flickOnSound.Play();
+                    }
                     else
+                    {
                         element.style.backgroundImage = new StyleBackground(offButton);
+                        flickOffSound.Play();
+                    }
 
                     TryCompleteTask();
                 };
