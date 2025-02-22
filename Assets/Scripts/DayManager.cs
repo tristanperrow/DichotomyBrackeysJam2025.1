@@ -4,16 +4,32 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class TaskDayPair
+{
+    public Task task;
+    public int unlockDay;
+}
+
+[System.Serializable]
+public class GameObjDayPair
+{
+    public List<GameObject> gameObjs;
+    public int unlockDay;
+}
+
 public class DayManager : MonoBehaviour
 {
 
     static DayManager Instance;
 
-    public float endTime = 3600;   // in seconds ( * 120) [36000 is standard]
+    public float endTime = 36000;   // in seconds ( * 120) [36000 is standard]
+    public float trainingEndTime = 14400; // in seconds * 120 [14400 = 4 hours]
 
     [Header("Task Settings")]
     public int tasksPerHour = 3;
-    public List<Task> tasks = new List<Task>();
+    public List<TaskDayPair> taskDayPairs = new List<TaskDayPair>();
+    public List<GameObjDayPair> gameObjDayPairs = new List<GameObjDayPair>();
 
     [Header("Events")]
     public UnityEvent dayOverEvent;
@@ -26,6 +42,7 @@ public class DayManager : MonoBehaviour
     private bool _hasDayEnded = false;
 
     // task properties
+    private List<Task> tasks = new List<Task>();
     private float _timeUntilNextTask = 0f;
     private List<Task> _activeTasks = new List<Task>();
 
@@ -34,9 +51,6 @@ public class DayManager : MonoBehaviour
     private float _circleHideTime = 0.5f;
     private float _lastStateTime = 1f;
     private bool _circleState;
-
-    private float _timeIncrementRate = 15f;
-    private float _lastIncrement = 0f;
 
     private void Awake()
     {
@@ -49,6 +63,29 @@ public class DayManager : MonoBehaviour
             // destroy duplicate instances
             Debug.LogWarning("There are multiple DayManager classes.");
             Destroy(gameObject);
+        }
+
+        // enable gameObjects based on day
+        var curDay = PlayerSave.Instance.day;
+        foreach (var pair in gameObjDayPairs)
+        {
+            if (pair.unlockDay <= curDay)
+            {
+                foreach (var gameObj in pair.gameObjs)
+                {
+                    gameObj.SetActive(true);
+                }
+            }
+        }
+
+        // add tasks to tasks list based on day
+        tasks.Clear();
+        foreach (var pair in taskDayPairs)
+        {
+            if (pair.unlockDay <= curDay)
+            {
+                tasks.Add(pair.task);
+            }
         }
     }
 
@@ -69,13 +106,15 @@ public class DayManager : MonoBehaviour
     {
         _lastStateTime -= Time.deltaTime;
         _dayTime += Time.deltaTime * 120;
-        if (_dayTime > _endTime)
+        // first two days are shorter
+        if (_dayTime > _endTime || (_dayTime > trainingEndTime && PlayerSave.Instance.day < 2))
         {
             if (!_hasDayEnded)
             {
                 _hasDayEnded = true;
                 dayOverEvent.Invoke();
 
+                PlayerSave.Instance.day += 1;
                 // go back to main menu
                 StartCoroutine(SceneTransitionManager.Instance.LoadScene(0));
             }

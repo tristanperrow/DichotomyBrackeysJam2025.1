@@ -9,6 +9,7 @@ public class MainMenuController : MonoBehaviour
 
     // state
 
+
     // ui definitions
     private VisualElement mainMenuContainer;
     private VisualElement optionsMenuContainer;
@@ -73,6 +74,7 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayerPrefs.SetInt("Day", PlayerSave.Instance.day);
         Application.Quit();
     }
 }

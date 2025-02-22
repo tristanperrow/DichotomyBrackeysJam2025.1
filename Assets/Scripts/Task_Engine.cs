@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
 public class Task_Engine : Task
@@ -11,6 +12,9 @@ public class Task_Engine : Task
 
     public bool cooling = true;
     public bool taskOpen = false;
+
+    public Gradient tempGradient;
+    public Light2D globalLight;
 
     // GAME OBJECTS
 
@@ -43,10 +47,12 @@ public class Task_Engine : Task
         engineTemp += df * dt * 2;
 
         UpdateTaskLabels();
+        UpdateGlobalLight();
 
         if (engineTemp < freezePoint || engineTemp > boilPoint)
         {
             // fail the task
+            
         }
     }
 
@@ -82,6 +88,17 @@ public class Task_Engine : Task
 
         // updating world sprite
 
+    }
+
+    public void UpdateGlobalLight()
+    {
+        if (globalLight == null) return;
+
+        float normalizedTemp = Mathf.InverseLerp(freezePoint, boilPoint, engineTemp);
+
+        Color lightColor = tempGradient.Evaluate(normalizedTemp);
+
+        globalLight.color = lightColor;
     }
 
     private void Cool()
