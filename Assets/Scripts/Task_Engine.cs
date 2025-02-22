@@ -40,7 +40,7 @@ public class Task_Engine : Task
         var df = (cooling) ? -1 : 1;
         var dt = Time.deltaTime;
 
-        engineTemp += df * dt;
+        engineTemp += df * dt * 2;
 
         UpdateTaskLabels();
 
