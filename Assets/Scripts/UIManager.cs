@@ -13,6 +13,9 @@ public class UIManager : MonoBehaviour
 
     public VisualElement _taskContainer;
 
+    public VisualElement _recCircle;
+    public Label _timeLabel;
+
     // state
     public bool inTask = false;
 
@@ -59,6 +62,10 @@ public class UIManager : MonoBehaviour
         _taskContainer.focusable = true;
 
         _taskContainer.style.display = DisplayStyle.None;
+
+        // security cam
+        _recCircle = root.Q<VisualElement>("circle");
+        _timeLabel = root.Q<Label>("time");
     }
 
     public void ShowTooltip(string text, Vector2 worldPosition)
@@ -131,5 +138,22 @@ public class UIManager : MonoBehaviour
         // disable the _taskContainer ui
         _taskContainer.style.display = DisplayStyle.None;
         inTask = false;
+    }
+
+    // update timer HUD
+    public void UpdateSecurityCamHud(string timeOfDay, bool circleShowing)
+    {
+        if (timeOfDay == null || _recCircle == null || _timeLabel == null ) return;
+
+        if (circleShowing)
+        {
+            _recCircle.style.visibility = Visibility.Visible;
+        }
+        else
+        {
+            _recCircle.style.visibility = Visibility.Hidden;
+        }
+
+        _timeLabel.text = timeOfDay;
     }
 }

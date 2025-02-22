@@ -1,5 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Game.uss?fileID=7433441132597879392&amp;guid=0a73aae68c7a34445bd61da4b8b80b2d&amp;type=3#Game" />
+    <ui:VisualElement name="sec-cam" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-left-color: rgb(120, 120, 120); border-right-color: rgb(120, 120, 120); border-top-color: rgb(120, 120, 120); border-bottom-color: rgb(120, 120, 120); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; max-width: 1880px; max-height: 1040px;">
+        <ui:VisualElement name="time-container" style="flex-grow: 1; position: absolute; right: 0; top: auto; left: auto; bottom: auto; height: auto; width: auto; flex-direction: row; align-items: center;">
+            <ui:VisualElement name="circle" style="flex-grow: 1; width: 25px; height: 25px; background-color: rgb(255, 0, 0); border-top-left-radius: 214px; border-top-right-radius: 214px; border-bottom-right-radius: 214px; border-bottom-left-radius: 214px;" />
+            <ui:Label text="12:00" name="time" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;); font-size: 80px; color: rgb(255, 30, 30);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
     <ui:VisualElement name="task-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.62); display: none;" />
     <ui:VisualElement name="tooltip-container" class="tooltip" style="flex-grow: 0; position: absolute; top: auto; display: none;">
         <ui:Label text="Interact" name="tooltip-label" class="tooltip-label" />

@@ -26,7 +26,7 @@ public class Task_Engine : Task
     private Button coolButton;
     private Button heatButton;
 
-    private void Awake()
+    private void Start()
     {
         ActivateTask();
     }

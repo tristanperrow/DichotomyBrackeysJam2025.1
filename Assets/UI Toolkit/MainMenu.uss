@@ -43,3 +43,78 @@
     color: rgb(255, 222, 172);
     background-color: rgba(255, 255, 255, 0.03);
 }
+
+.menuButtonInactive {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: rgb(97, 106, 111);
+    font-size: 72px;
+    -unity-font-definition: url("project://database/Assets/Sprites/Matrixtype%20Bold.ttf?fileID=12800000&guid=b1754b1662752a543bbac1a4dde7786b&type=3#Matrixtype Bold");
+    transition-timing-function: ease-out-cubic;
+    transition-duration: 0.5s;
+}
+
+.optionsButton {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: rgb(243, 243, 243);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    font-size: 40px;
+    -unity-font-definition: url("project://database/Assets/Sprites/Matrixtype.ttf?fileID=12800000&guid=271c8d7f8ccb29448ba62cb7de7e49d5&type=3#Matrixtype");
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out-cubic;
+}
+
+.optionsButton:hover {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: rgb(255, 222, 172);
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    font-size: 44px;
+    -unity-font-definition: url("project://database/Assets/Sprites/Matrixtype.ttf?fileID=12800000&guid=271c8d7f8ccb29448ba62cb7de7e49d5&type=3#Matrixtype");
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out-cubic;
+}

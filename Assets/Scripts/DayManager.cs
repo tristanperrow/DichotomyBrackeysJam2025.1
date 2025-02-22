@@ -9,7 +9,7 @@ public class DayManager : MonoBehaviour
 
     static DayManager Instance;
 
-    public float endTime = 36000;   // in seconds ( * 120)
+    public float endTime = 3600;   // in seconds ( * 120) [36000 is standard]
 
     [Header("Task Settings")]
     public int tasksPerHour = 3;
@@ -29,6 +29,12 @@ public class DayManager : MonoBehaviour
     // task properties
     private float _timeUntilNextTask = 0f;
     private List<Task> _activeTasks = new List<Task>();
+
+    // security cam ui
+    private float _circleShowTime = 1f;
+    private float _circleHideTime = 0.5f;
+    private float _lastStateTime = 1f;
+    private bool _circleState;
 
     private void Awake()
     {
@@ -59,6 +65,7 @@ public class DayManager : MonoBehaviour
 
     private void Update()
     {
+        _lastStateTime -= Time.deltaTime;
         _dayTime += Time.deltaTime * 120;
         if (_dayTime > _endTime)
         {
@@ -66,6 +73,9 @@ public class DayManager : MonoBehaviour
             {
                 _hasDayEnded = true;
                 dayOverEvent.Invoke();
+
+                // go back to main menu
+                StartCoroutine(SceneTransitionManager.Instance.LoadScene(0));
             }
         }
         else
@@ -80,6 +90,20 @@ public class DayManager : MonoBehaviour
                 _timeUntilNextTask -= Time.deltaTime * 120;
             }
         }
+
+        // security cam code
+        if (_lastStateTime < 0f && _circleState)
+        {
+            _lastStateTime = _circleHideTime;
+            _circleState = false;
+        }
+        else if (_lastStateTime < 0f && !_circleState)
+        {
+            _lastStateTime = _circleShowTime;
+            _circleState = true;
+        }
+
+        UIManager.Instance.UpdateSecurityCamHud(GetDayTimeString(), _circleState);
     }
 
     #region - Tasks -
