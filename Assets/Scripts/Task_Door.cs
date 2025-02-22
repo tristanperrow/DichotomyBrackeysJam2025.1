@@ -82,6 +82,7 @@ public class Task_Door : Task
     {
         // fade screen to black, shoot player, then transition to lose screen
         Debug.Log("Failed door task...");
+        StartCoroutine(SceneTransitionManager.Instance.LoadScene(2));
     }
 
     public override void OpenTask()
