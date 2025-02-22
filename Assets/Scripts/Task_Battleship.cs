@@ -29,6 +29,11 @@ public class Task_Battleship : Task
     private VisualElement crosshair;
     private VisualElement battleship;
 
+    // audio
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource missSound;
+    [SerializeField] private AudioSource completeSound;
+
     // crosshair code
     private void MouseEnterCell(MouseEnterEvent e)
     {
@@ -54,6 +59,7 @@ public class Task_Battleship : Task
         {
             // hit ship
             button.style.backgroundImage = new StyleBackground(hitTex);
+            hitSound.Play();
 
             // check if all ship positions were hit
             bool allHit = true;
@@ -69,6 +75,7 @@ public class Task_Battleship : Task
             // if all were hit, complete the task
             if (allHit)
             {
+                completeSound.Play();
                 CompleteTask();
                 ShowBattleship();
             }
@@ -77,6 +84,7 @@ public class Task_Battleship : Task
         {
             // missed ship
             button.style.backgroundImage = new StyleBackground(missTex);
+            missSound.Play();
         }
     }
 

@@ -21,7 +21,7 @@ public class GameObjDayPair
 public class DayManager : MonoBehaviour
 {
 
-    static DayManager Instance;
+    public static DayManager Instance;
 
     public float endTime = 36000;   // in seconds ( * 120) [36000 is standard]
     public float trainingEndTime = 14400; // in seconds * 120 [14400 = 4 hours]
@@ -35,7 +35,7 @@ public class DayManager : MonoBehaviour
     public UnityEvent dayOverEvent;
 
     // time the day started
-    private float _dayTime;
+    public float _dayTime;
     // time the day will end
     private float _endTime = 36000; // in seconds ( * 120)
     // if the day has ended
@@ -51,6 +51,15 @@ public class DayManager : MonoBehaviour
     private float _circleHideTime = 0.5f;
     private float _lastStateTime = 1f;
     private bool _circleState;
+
+    // ambiance sound
+    [SerializeField] private AudioSource longACSound;
+    [SerializeField] private AudioSource longFanSound;
+    [SerializeField] private AudioSource shortGarageSound;
+    [SerializeField] private AudioSource shortPumpSound;
+    [SerializeField] private AudioSource shortCreakingSound;
+
+    private float _nextAmbTime = 30f;
 
     private void Awake()
     {
@@ -100,6 +109,13 @@ public class DayManager : MonoBehaviour
         _dayTime = 0;
         _endTime = endTime;
         _hasDayEnded = false;
+
+        // start ambiance sounds
+        longACSound.Play();
+        longFanSound.Play();
+
+        // initial ambiance timer
+        _nextAmbTime = Random.Range(10f, 30f);
     }
 
     private void Update()
@@ -154,6 +170,17 @@ public class DayManager : MonoBehaviour
         */
 
         UIManager.Instance.UpdateSecurityCamHud(GetDayTimeString(), _circleState);
+
+        // ambiance
+        if (!_hasDayEnded)
+        {
+            _nextAmbTime -= Time.deltaTime;
+            if (_nextAmbTime <= 0f)
+            {
+                PlayRandomAmbianceSound();
+                _nextAmbTime = Random.Range(10, 30f);
+            }
+        }
     }
 
     #region - Tasks -
@@ -217,5 +244,23 @@ public class DayManager : MonoBehaviour
         int hours = Mathf.FloorToInt(_dayTime / 3600);
         int minutes = Mathf.FloorToInt(Mathf.FloorToInt((_dayTime % 3600) / 60) / 15) * 15;
         return $"{hours:00}:{minutes:00}";
+    }
+
+    public void PlayRandomAmbianceSound()
+    {
+        int soundIndex = Random.Range(0, 3);
+        switch (soundIndex)
+        {
+            case 0:
+                shortGarageSound.Play();
+                break;
+            case 1:
+                shortPumpSound.Play();
+                break;
+            case 2:
+                shortCreakingSound.Play();
+                break;
+        }
+
     }
 }

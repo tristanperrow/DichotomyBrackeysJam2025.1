@@ -16,6 +16,10 @@ public class Task_Buttons : Task
     // UI
     private VisualElement buttonsContainer;
 
+    // Audio
+    [SerializeField] private AudioSource pushOnSound;
+    [SerializeField] private AudioSource pushOffSound;
+
     private void TryCompleteTask()
     {
         var allOn = true;
@@ -58,10 +62,15 @@ public class Task_Buttons : Task
             {
                 buttonState[j] = !buttonState[j];
                 if (buttonState[j])
+                {
                     button.style.backgroundImage = new StyleBackground(onButton);
+                    pushOnSound.Play();
+                }
                 else
+                {
                     button.style.backgroundImage = new StyleBackground(offButton);
-
+                    pushOffSound.Play();
+                }
                 TryCompleteTask();
             };
 

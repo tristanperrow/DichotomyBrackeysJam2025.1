@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Task.uss?fileID=7433441132597879392&amp;guid=e69d6515c0a7c3e45a4c96687e40efa7&amp;type=3#Task" />
     <ui:VisualElement name="main-engine-task-container" style="flex-grow: 1; position: absolute; width: 100%; height: 100%;">
-        <ui:VisualElement name="task-bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/UI_mainengine_blank.png?fileID=2800000&amp;guid=9213204679760504a8c696124c1a79ec&amp;type=3#UI_mainengine_blank&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; position: absolute; width: 100%; height: 100%; left: auto;" />
+        <ui:VisualElement name="task-bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/UI_mainengine.png?fileID=2800000&amp;guid=8dcf3405d4c2c1346894869445b0027f&amp;type=3#UI_mainengine&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; position: absolute; width: 100%; height: 100%; left: auto;" />
         <ui:VisualElement name="task-focusable" style="flex-grow: 1;">
             <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; left: 570px; bottom: 38px; top: 110px; right: 758px;" />
             <ui:VisualElement name="focusable" focusable="true" style="flex-grow: 1; position: absolute; left: 1170px; bottom: 38px; top: 426px; right: 541px;" />

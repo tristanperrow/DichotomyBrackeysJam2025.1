@@ -18,11 +18,16 @@ public class Task_Captcha : Task
     private TextField captchaInput;
     private Button submitButton;
 
+    // Audio
+    [SerializeField] private AudioSource successSound;
+    [SerializeField] private AudioSource failureSound;
+
     private void OnSubmitButtonClicked()
     {
         if (captchaInput.value == captchaText)
         {
             // task success
+            successSound.Play();
             CompleteTask();
             CloseTask();
             UIManager.Instance.HideTask();
@@ -30,6 +35,7 @@ public class Task_Captcha : Task
         else
         {
             // failed captcha, regenerate new captcha
+            failureSound.Play();
             GenerateCaptcha();
         }
     }

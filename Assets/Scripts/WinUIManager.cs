@@ -9,6 +9,10 @@ public class WinUIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // reset transition sorting order
+        SceneTransitionManager.Instance.gameObject.GetComponent<UIDocument>().sortingOrder = 0;
+
+        // real start
         continueButton = GetComponent<UIDocument>().rootVisualElement.Q<Button>();
 
         continueButton.clicked += OnClick;
@@ -16,6 +20,6 @@ public class WinUIManager : MonoBehaviour
 
     private void OnClick()
     {
-        SceneTransitionManager.Instance.LoadScene(0);
+        StartCoroutine(SceneTransitionManager.Instance.LoadScene(0));
     }
 }
