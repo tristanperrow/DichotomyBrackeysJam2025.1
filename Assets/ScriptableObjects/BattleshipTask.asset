@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c65445046b86661498de477e88073243, type: 3}
   m_Name: BattleshipTask
   m_EditorClassIdentifier: Assembly-CSharp::TaskData
   taskName: Battleship
-  taskDescription: Shoot down enemy ships. You're quite unsure how this helps the
-    crew.
+  taskDescription: You're not quite sure how this works, but apparently you are helping
+    defend the engine.
   taskInteractionPrompt: Interact
   taskInteractionPromptPosition: {x: 0, y: 0}
-  timeUntilFail: 30
+  timeUntilFail: 40
   taskUI: {fileID: 9197481963319205126, guid: a1f100736a0468b4b87d1a1c0334ac0d, type: 3}
