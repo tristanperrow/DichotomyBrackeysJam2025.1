@@ -1,0 +1,9 @@
+.continue {
+    -unity-font-definition: url("project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&guid=4a4453b6c6ff46449be5c459584546bf&type=3#Hermetico-Regular");
+}
+
+.continue:hover {
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out-cubic;
+    -unity-font-definition: url("project://database/Assets/Sprites/Hermetico-Italic.otf?fileID=12800000&guid=42b136566c7a3624ebf0dee42c6e2a07&type=3#Hermetico-Italic");
+}

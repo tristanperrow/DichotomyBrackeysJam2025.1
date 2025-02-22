@@ -116,7 +116,7 @@ public class DayManager : MonoBehaviour
 
                 PlayerSave.Instance.day += 1;
                 // go back to main menu
-                StartCoroutine(SceneTransitionManager.Instance.LoadScene(0));
+                StartCoroutine(SceneTransitionManager.Instance.LoadScene(3));
             }
         }
         else
@@ -206,6 +206,8 @@ public class DayManager : MonoBehaviour
         _activeTasks.Remove(task);
         // do other task failed related stuff
         Debug.Log("Task Failed: " + task.data.taskName);
+
+        Task_Engine.Instance.tempMult *= 1.5f;
     }
 
     #endregion

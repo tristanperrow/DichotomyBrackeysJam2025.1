@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class Task_Engine : Task
 {
 
+    public static Task_Engine Instance;
+
     public float engineTemp = 120f;
     public float freezePoint = 32f;
     public float boilPoint = 212f;
@@ -15,6 +17,8 @@ public class Task_Engine : Task
 
     public Gradient tempGradient;
     public Light2D globalLight;
+
+    public float tempMult = 1.0f;
 
     // GAME OBJECTS
 
@@ -30,6 +34,19 @@ public class Task_Engine : Task
     private Button coolButton;
     private Button heatButton;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            // no two main engine tasks
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
         ActivateTask();
@@ -44,7 +61,7 @@ public class Task_Engine : Task
         var df = (cooling) ? -1 : 1;
         var dt = Time.deltaTime;
 
-        engineTemp += df * dt * 2;
+        engineTemp += df * dt * 2 * tempMult;
 
         UpdateTaskLabels();
         UpdateGlobalLight();
@@ -52,7 +69,7 @@ public class Task_Engine : Task
         if (engineTemp < freezePoint || engineTemp > boilPoint)
         {
             // fail the task
-            
+            SceneTransitionManager.Instance.LoadScene(2);
         }
     }
 

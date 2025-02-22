@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Finish.uss?fileID=7433441132597879392&amp;guid=3bf33c0275d4a874b8196e2645cbeabb&amp;type=3#Finish" />
+    <ui:VisualElement name="bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/motherboard_blue.png?fileID=2800000&amp;guid=01e9e5357316f3e40b8fc3a5af825cd5&amp;type=3#motherboard_blue&quot;); background-size: 50% 50%; background-color: rgb(7, 9, 14);">
+        <ui:Label text="Clocking Out..." name="win-label" style="position: absolute; top: 360px; left: 614px; height: 126px; width: 727px; color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 77px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/Hermetico-Regular.otf?fileID=12800000&amp;guid=4a4453b6c6ff46449be5c459584546bf&amp;type=3#Hermetico-Regular&quot;);" />
+        <ui:Label text="See you tomorrow!" enable-rich-text="true" name="sub-win-label" style="position: absolute; top: 468px; left: 746px; color: rgb(176, 122, 0); font-size: 38px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/Matrixtype%20Display.ttf?fileID=12800000&amp;guid=a25d20b370310174594b237369c5e75c&amp;type=3#Matrixtype Display&quot;);" />
+        <ui:VisualElement name="buttons" style="flex-grow: 1; position: absolute; height: 187px; width: 776px; top: 554px; left: 580px; justify-content: center;">
+            <ui:Button text="Continue" class="continue" style="margin-top: 0; margin-right: 200px; margin-bottom: 0; margin-left: 200px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(188, 188, 188, 0); color: rgb(0, 142, 255); font-size: 76px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
