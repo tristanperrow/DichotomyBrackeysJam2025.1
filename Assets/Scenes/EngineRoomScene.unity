@@ -2844,7 +2844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTime: 36000
   trainingEndTime: 14400
-  tasksPerHour: 20
+  tasksPerHour: 3
   taskDayPairs:
   - task: {fileID: 1112270339}
     unlockDay: 1
@@ -6412,6 +6412,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
   globalLight: {fileID: 547554270}
+  tempMult: 1
 --- !u!1 &1995647385
 GameObject:
   m_ObjectHideFlags: 0
