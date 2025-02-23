@@ -72,7 +72,7 @@ public class Task_Engine : Task
         if (engineTemp < freezePoint || engineTemp > boilPoint)
         {
             // fail the task
-            SceneTransitionManager.Instance.LoadScene(2);
+            StartCoroutine(SceneTransitionManager.Instance.LoadScene(2));
         }
     }
 

@@ -36,8 +36,8 @@ public class Task_Switches : Task
         if (allOn)
         {
             CompleteTask();
-            //UIManager.Instance.HideTask();
-            //CloseTask();
+            UIManager.Instance.HideTask();
+            CloseTask();
         }
     }
 
